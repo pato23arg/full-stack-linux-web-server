@@ -1,8 +1,8 @@
-Linux-Server-Configuration-Udacity-Full-Stack-Nanodegree-Project
+Linux Web Server Setup - Udacity Full Stack Nanodegree
 
-This is the last project toward Udacity Full Stack Web Developer Nanodegree. In this project, the Catalog Web Application from project 3 will be hosted by a Ubuntu Linux server on an Amazon Lightsail instance. A series of instructions will be presented below. You can visit http://18.218.99.181/ for the website deployed.
+You will take a baseline installation of a Linux distribution on a virtual machine and prepare it to host your web applications, to include installing updates, securing it from a number of attack vectors and installing/configuring web and database servers
 
-Above link is now unavailable because I have graduated from the nanodegree program.
+Links for project submission work:
 
     Public IP address: http://34.200.250.34/
     SSH port: 22 (port 2200 not working currently with Lightsail, when switching the instance isn't accesible anymore)
