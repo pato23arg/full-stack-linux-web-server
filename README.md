@@ -5,7 +5,7 @@ You will take a baseline installation of a Linux distribution on a virtual machi
 Links for project submission work:
 
     Public IP address: http://34.200.250.34/
-    SSH port: 22 (port 2200 not working currently with Lightsail, when switching the instance isn't accesible anymore)
+    SSH port: 2200
 
 Start a new Ubuntu Linux Server instance on Amazon Lightsail
 
@@ -28,14 +28,17 @@ Update all currently installed packages
     Run sudo apt-get upgrade to install newest versions of packages
     Set for future updates: sudo apt-get dist-upgrade
 
-Change the SSH port (pending)
+Change the SSH port:
+
+modify port in /etc/ssh/sshd_config
+restart sshd daemon: sudo service sshd restart
 
 Configure the firewall
 
     Check firewall status: $ sudo ufw status
     Set default firewall to deny all incomings: $ sudo ufw default deny incoming
     Set default firewall to allow all outgoings: $ sudo ufw default allow outgoing
-    Allow incoming TCP packets on port 22 to allow SSH: $ sudo ufw allow 22/tcp
+    Allow incoming TCP packets on port 2200 to allow SSH: $ sudo ufw allow 2200/tcp
     Allow incoming TCP packets on port 80 to allow www: $ sudo ufw allow www
     Allow incoming UDP packets on port 123 to allow NTP: $ sudo ufw allow 123/udp
     Close port 22: $ sudo ufw deny 22
